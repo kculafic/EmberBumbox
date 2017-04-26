@@ -8,4 +8,7 @@ export default DS.Model.extend({
   artist: attr('string'),
   isExplicit: attr('boolean'),
   songs: hasMany('song')
+=======
+
+export default DS.Model.extend({
 });

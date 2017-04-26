@@ -8,4 +8,7 @@ export default DS.Model.extend({
   duration: attr('number'),
   url: attr('string'),
   album: belongsTo('album')
+=======
+
+export default DS.Model.extend({
 });
