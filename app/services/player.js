@@ -4,6 +4,7 @@ var run = Ember.run;
 export default Ember.Service.extend({
   isPlaying: false,
   audioElement: null,
+  song: null,
 
   setupAudioElement: function() {
   var el = document.createElement('audio');
@@ -13,6 +14,7 @@ export default Ember.Service.extend({
   }.on('init'),
 
   play: function(song) {
+    this.set('song', song);
     this.set('audioElement.src', song.get('url'));
     this.get('audioElement').play();
   },
