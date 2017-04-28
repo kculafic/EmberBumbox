@@ -9,9 +9,7 @@ export default DS.Model.extend({
   artist: attr('string'),
   isExplicit: attr('boolean'),
   songs: hasMany('song'),
-
   songDurations: computed.mapBy('songs', 'duration'),
   totalDuration: computed.sum('songDurations'),
   songCount: computed.alias('songs.length')
-  
 });
