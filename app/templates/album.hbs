@@ -6,13 +6,15 @@
 
 <table class="album-listing">
   {{#each model.songs as |song|}}
-    <tr>
+    {{song-row song=song}}
+
+    <!-- <tr>
       <td class="song-track">
         <span class="track-number">{{song.track}} </span>
       </td>
       <td class="song-name">{{song.name}}</td>
       <td class="song-duration">{{format-duration song.duration}}</td>
-    </tr>
+    </tr> -->
   {{/each}}
 
     <tr>
