@@ -8,4 +8,5 @@ export function formatDuration(duration) {
   return minutes + ":" + formattedSeconds;
 }
 
+
 export default Ember.Helper.helper(formatDuration);
