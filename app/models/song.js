@@ -13,5 +13,5 @@ export default DS.Model.extend({
   album: belongsTo('album'),
 
   artist: computed.alias('album.artist'),
-  artwork: computed.alias('album.artwork') 
+  artwork: computed.alias('album.artwork')
 });
