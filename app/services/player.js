@@ -34,9 +34,10 @@ export default Ember.Service.extend({
   },
 
   timeDidUpdate: function() {
-    this.set('currentTime', Math.floor(this.get('audioElement.currentTime')));  
+    this.set('currentTime', Math.floor(this.get('audioElement.currentTime')));
   },
 
+// thing
   willDestroy: function() {
     this.get('audioElement').pause();
     this.set('audioElement.src', '');
